@@ -2,115 +2,138 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DE GREAT DOVE GLOBAL IMPEX</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DE GREAT DOVE GLOBAL IMPEX</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#000;
-color:#f5d76e;
+color:#f5f5f5;
 }
 
-/* HEADER */
+:root{
+--gold:#d4af37;
+}
 
-header{
+/* HERO */
+
+.hero{
+width:100%;
+height:320px;
+background:url('https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/d93f75e0fdb198be34b00c93eb680f56e121c1a1/Screenshot_20260305-103039%7E2.jpg') center/cover no-repeat;
+border-bottom:4px solid var(--gold);
+}
+
+/* INFO */
+
+.info{
 text-align:center;
-padding:20px;
+padding:30px 20px;
 }
 
-header h1{
-margin:10px 0;
-font-size:28px;
+.info h1{
+color:var(--gold);
+margin-bottom:10px;
 }
 
-header p{
-color:white;
-font-size:15px;
-}
-
-/* BUTTONS */
-
-.buttons a{
-display:inline-block;
-margin:6px;
-padding:10px 16px;
-background:#f5d76e;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:5px;
-}
-
-/* IMAGE GALLERY */
+/* GALLERY */
 
 .gallery{
+max-width:1100px;
+margin:40px auto;
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:12px;
-padding:15px;
+gap:15px;
+padding:10px;
 }
 
 .gallery img{
 width:100%;
-border:2px solid #f5d76e;
-border-radius:6px;
+height:230px;
+object-fit:cover;
+border:2px solid rgba(212,175,55,.7);
+box-shadow:0 0 10px rgba(212,175,55,.3);
 }
 
 /* FORM */
 
-.container{
-padding:20px;
+.form-box{
+max-width:750px;
+margin:50px auto;
+padding:30px;
+border:1px solid rgba(212,175,55,.6);
+background:#050505;
 }
 
-form{
-background:#111;
-padding:20px;
-border-radius:8px;
-border:2px solid #f5d76e;
+.form-box h2{
+color:var(--gold);
+text-align:center;
 }
 
 label{
 display:block;
-margin-top:12px;
-font-weight:bold;
+margin-top:15px;
+font-weight:600;
 }
 
-input,select{
+input,select,textarea{
 width:100%;
-padding:8px;
-margin-top:5px;
-border-radius:4px;
-border:none;
+padding:12px;
+margin-top:6px;
+background:#0c0c0c;
+border:1px solid #333;
+color:#fff;
+}
+
+textarea{
+min-height:100px;
 }
 
 button{
+margin-top:25px;
 width:100%;
-margin-top:20px;
-padding:12px;
-background:#f5d76e;
+padding:16px;
+background:linear-gradient(90deg,#d4af37,#f1d27a);
 border:none;
+font-size:18px;
 font-weight:bold;
 cursor:pointer;
-border-radius:6px;
 }
 
 /* MAP */
 
-.map{
-margin:20px;
-border:2px solid #f5d76e;
+.map iframe{
+width:100%;
+height:350px;
+border:2px solid rgba(212,175,55,.4);
 }
 
-/* FOOTER */
+/* FLOATING BUTTONS */
+
+.whatsapp,.call,.tiktok,.facebook{
+position:fixed;
+right:18px;
+padding:14px 18px;
+border-radius:40px;
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
+.whatsapp{bottom:140px;background:#25d366}
+.call{bottom:90px;background:#2563eb}
+.tiktok{bottom:40px;background:#000;border:2px solid #fff}
+.facebook{bottom:190px;background:#1877f2}
 
 footer{
+background:#000;
 text-align:center;
-padding:15px;
-color:white;
-font-size:13px;
+padding:20px;
+color:#aaa;
+margin-top:40px;
 }
 
 </style>
@@ -118,86 +141,102 @@ font-size:13px;
 
 <body>
 
+<div class="hero"></div>
 
-<header>
+<div class="info">
 
 <h1>DE GREAT DOVE GLOBAL IMPEX</h1>
 
-<p><b>Giant in All-Round Electrical Materials</b></p>
+<p>Giant in allaround electrical materials of all types.</p>
+
+<p>Such as chandeliers, switches, sockets, pipe, cables, conduit materials, street lights and many more.</p>
 
 <p>
-Dealers in chandeliers, switches, sockets, pipes, cables and many more electrical materials.
+Adress: 10 Odison Plaza Electrical Dealers International Market, Kilometer 5 Onitsha Owerri Road, Obosi Anambra State.
 </p>
-
-<p>
-Address: 10 Odison Plaza Electrical Dealers International Market,<br>
-Kilometer 5 Onitsha-Owerri Road, Obosi, Anambra State.
-</p>
-
-<div class="buttons">
-
-<a href="tel:07047271507">CALL</a>
-
-<a href="https://wa.me/2348039716382">WHATSAPP</a>
-
-<a href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU">TIKTOK</a>
-
-<a href="https://www.facebook.com/share/1Krjttexr8/">FACEBOOK</a>
 
 </div>
 
-</header>
-
-
-<!-- ELECTRICAL MATERIALS GALLERY -->
+<!-- PRODUCT GALLERY -->
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1581092160607-ee22731c3f3c">
+<img src="https://source.unsplash.com/600x600/?chandelier">
+<img src="https://source.unsplash.com/600x600/?luxury-chandelier">
 
-<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+<img src="https://source.unsplash.com/600x600/?wall-light">
+<img src="https://source.unsplash.com/600x600/?wall-lamp">
 
-<img src="https://images.unsplash.com/photo-1616627989730-0d28f52f4fb7">
+<img src="https://source.unsplash.com/600x600/?electrical-switch">
+<img src="https://source.unsplash.com/600x600/?power-switch">
 
-<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4">
+<img src="https://source.unsplash.com/600x600/?electric-cables">
+<img src="https://source.unsplash.com/600x600/?electric-wire">
 
-<img src="https://images.unsplash.com/photo-1599493758267-c6c884c7071f">
+<img src="https://source.unsplash.com/600x600/?street-light">
+<img src="https://source.unsplash.com/600x600/?led-street-light">
 
-<img src="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b">
+<img src="https://source.unsplash.com/600x600/?electrical-pipe">
+<img src="https://source.unsplash.com/600x600/?conduit-pipe">
 
-<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
+<img src="https://source.unsplash.com/600x600/?electrical-installation">
+<img src="https://source.unsplash.com/600x600/?electric-tools">
 
-<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
+<img src="https://source.unsplash.com/600x600/?electrical-socket">
+<img src="https://source.unsplash.com/600x600/?power-outlet">
+
+<img src="https://source.unsplash.com/600x600/?led-light">
+<img src="https://source.unsplash.com/600x600/?ceiling-light">
+
+<img src="https://source.unsplash.com/600x600/?electrical-panel">
+<img src="https://source.unsplash.com/600x600/?distribution-board">
+
+<img src="https://source.unsplash.com/600x600/?industrial-light">
+<img src="https://source.unsplash.com/600x600/?electric-pole">
+
+<img src="https://source.unsplash.com/600x600/?electric-installation">
+<img src="https://source.unsplash.com/600x600/?electric-materials">
 
 </div>
 
+<!-- GOOGLE MAP -->
 
+<div class="map">
 
-<!-- CUSTOMER ORDER FORM -->
+<iframe src="https://www.google.com/maps?q=Onitsha+Owerri+Road+Obosi+Anambra+State&output=embed"></iframe>
 
-<div class="container">
+</div>
 
-<form onsubmit="sendWhatsApp(); return false;">
+<!-- CUSTOMER FORM -->
+
+<div class="form-box">
+
+<h2>Customer Order Form</h2>
+
+<form onsubmit="sendOrder(); return false;">
 
 <label>Customer Name</label>
-<input type="text" id="name">
+<input id="name" placeholder="Enter your name">
 
-<label>Customer Phone Number</label>
-<input type="tel" id="phone">
+<label>Customer Phone</label>
+<input id="phone" placeholder="Enter phone number">
 
 <label>Customer Address</label>
-<input type="text" id="address">
+<input id="address" placeholder="Enter delivery address">
 
-<label>Select Electrical Material</label>
+<label>Select Product / Service</label>
 
 <select id="product">
 
-<option>Chandeliers</option>
+<option>Chandelier</option>
+<option>Wall Bracket</option>
 <option>Switches</option>
 <option>Sockets</option>
 <option>Cables</option>
-<option>PVC Pipes</option>
-<option>Electrical Accessories</option>
+<option>Street Light</option>
+<option>Conduit Materials</option>
+<option>PVC Pipe</option>
+<option>Electrical Installation</option>
 
 </select>
 
@@ -205,72 +244,62 @@ Kilometer 5 Onitsha-Owerri Road, Obosi, Anambra State.
 
 <select id="delivery">
 
-<option>Yes</option>
-<option>No</option>
+<option>Yes I need delivery</option>
+<option>No delivery</option>
 
 </select>
 
-<button>Submit Order via WhatsApp</button>
+<label>More Specifications</label>
+
+<textarea id="specs" placeholder="Write color, size, quantity or any special request"></textarea>
+
+<button type="submit">Submit Order via WhatsApp</button>
 
 </form>
 
 </div>
 
-
-
-<!-- MAP -->
-
-<div class="map">
-
-<iframe
-src="https://www.google.com/maps?q=Onitsha%20Owerri%20Road%20Obosi&output=embed"
-width="100%" height="300"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</div>
-
-
-
 <footer>
 
-© DE GREAT DOVE GLOBAL IMPEX  
-All Types of Electrical Materials Available
+© 2026 DE GREAT DOVE GLOBAL IMPEX
 
 </footer>
 
+<!-- FLOATING BUTTONS -->
 
+<a class="whatsapp" href="https://wa.me/2348039716382">WhatsApp</a>
+
+<a class="call" href="tel:07047271507">Call</a>
+
+<a class="tiktok" href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU">TikTok</a>
+
+<a class="facebook" href="https://www.facebook.com/share/1Krjttexr8/">Facebook</a>
 
 <script>
 
-function sendWhatsApp(){
+function sendOrder(){
 
-var name=document.getElementById("name").value;
+var msg =
 
-var phone=document.getElementById("phone").value;
+"NEW CUSTOMER ORDER%0A%0A"+
 
-var address=document.getElementById("address").value;
+"Name: "+document.getElementById("name").value+"%0A"+
 
-var product=document.getElementById("product").value;
+"Phone: "+document.getElementById("phone").value+"%0A"+
 
-var delivery=document.getElementById("delivery").value;
+"Address: "+document.getElementById("address").value+"%0A"+
 
-var message="Hello DE GREAT DOVE GLOBAL IMPEX,%0A%0AI want to order electrical materials.%0A%0A"+
-"Name: "+name+"%0A"+
-"Phone: "+phone+"%0A"+
-"Address: "+address+"%0A"+
-"Product: "+product+"%0A"+
-"Home Delivery: "+delivery+"%0A%0A"+
-"Please respond with price and availability.";
+"Product: "+document.getElementById("product").value+"%0A"+
 
-window.open("https://wa.me/2348039716382?text="+message);
+"Delivery: "+document.getElementById("delivery").value+"%0A"+
+
+"Specifications: "+document.getElementById("specs").value;
+
+window.open("https://wa.me/2348039716382?text="+msg,"_blank");
 
 }
 
 </script>
-
 
 </body>
 </html>
