@@ -4,225 +4,337 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DE GREAT DOVE GLOBAL IMPEX</title>
+
 <style>
-:root{--gold:#d4af37;}
+
+:root{
+--gold:#d4af37;
+}
+
 body{
-  margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:linear-gradient(180deg,#020617,#000);
-  color:#f5f5f5;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#000;
+color:#fff;
 }
-/* HERO */
+
+/* TOP IMAGE */
+
 .hero{
-  width:100%;
-  height:320px;
-  background:url('https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/1772704509609.png') center/contain no-repeat;
-  border-bottom:4px solid var(--gold);
+width:100%;
+height:260px;
+background:url('https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/1772704509609.png') center/contain no-repeat;
+border-bottom:3px solid var(--gold);
 }
+
 /* INFO */
+
 .info{
-  text-align:center;
-  padding:30px 20px;
+text-align:center;
+padding:15px 15px 5px 15px;
 }
+
 .info h2{
-  color:var(--gold);
+color:var(--gold);
+margin-bottom:8px;
 }
-.info p{
-  margin-top:10px;
+
+/* MOVING IMAGES */
+
+.slider{
+overflow:hidden;
+width:100%;
+margin-top:10px;
 }
-/* MOVING IMAGE */
-.moving-wrap{
-  overflow:hidden;
-  max-width:1200px;
-  margin:20px auto;
-  border-top:1px solid rgba(212,175,55,.4);
-  border-bottom:1px solid rgba(212,175,55,.4);
+
+.slide-track{
+display:flex;
+width:200%;
+animation:scroll 6s linear infinite;
 }
-.moving-track{
-  display:flex;
-  animation:slide 12s linear infinite alternate;
+
+.slide-track img{
+width:320px;
+height:180px;
+object-fit:cover;
+margin:10px;
+border:2px solid var(--gold);
+border-radius:6px;
 }
-.moving-track img{
-  width:33%;
-  max-width:400px;
-  height:200px;
-  object-fit:cover;
-  margin:10px;
-  border:2px solid var(--gold);
-  border-radius:6px;
+
+/* FAST MOVEMENT */
+
+@keyframes scroll{
+
+0%{
+transform:translateX(-10%);
 }
-@keyframes slide{
-  from{transform:translateX(0);}
-  to{transform:translateX(-30%);}
+
+100%{
+transform:translateX(-50%);
 }
-/* STATIC GALLERY */
+
+}
+
+/* PRODUCT GRID */
+
 .gallery{
-  max-width:1200px;
-  margin:30px auto;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
+max-width:1100px;
+margin:25px auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+padding:0 10px;
 }
+
 .gallery img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-  border:2px solid var(--gold);
-  border-radius:6px;
-  box-shadow:0 0 10px rgba(212,175,55,0.4);
+width:100%;
+height:190px;
+object-fit:cover;
+border-radius:6px;
+border:2px solid var(--gold);
+box-shadow:0 0 10px rgba(212,175,55,0.5);
 }
+
 /* FORM */
+
 .form-box{
-  max-width:900px;
-  margin:50px auto;
-  padding:30px;
-  border:1px solid rgba(212,175,55,0.5);
-  background:#050505;
+max-width:850px;
+margin:40px auto;
+padding:25px;
+background:#050505;
+border:1px solid var(--gold);
 }
+
 .form-box h2{
-  color:var(--gold);
-  text-align:center;
-  margin-bottom:15px;
+text-align:center;
+color:var(--gold);
 }
+
 label{
-  display:block;
-  margin-top:15px;
-  font-weight:600;
+display:block;
+margin-top:14px;
+font-weight:bold;
 }
+
 input,select,textarea{
-  width:100%;
-  padding:12px;
-  margin-top:6px;
-  background:#020617;
-  border:1px solid #333;
-  color:#fff;
+width:100%;
+padding:10px;
+margin-top:5px;
+background:#020617;
+border:1px solid #333;
+color:#fff;
 }
+
 textarea{
-  min-height:100px;
-  resize:vertical;
+height:100px;
 }
+
 button{
-  margin-top:25px;
-  width:100%;
-  padding:16px;
-  background:linear-gradient(90deg,#d4af37,#ffd966);
-  border:none;
-  font-size:18px;
-  font-weight:800;
-  cursor:pointer;
+width:100%;
+margin-top:20px;
+padding:15px;
+background:var(--gold);
+border:none;
+font-weight:bold;
+cursor:pointer;
 }
-/* FLOATING BUTTONS */
-.whatsapp,.call,.tiktok,.facebook{
-  position:fixed;
-  right:18px;
-  padding:14px 18px;
-  border-radius:40px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:700;
-  z-index:999;
+
+/* FLOAT BUTTONS */
+
+.whatsapp{
+position:fixed;
+right:15px;
+bottom:140px;
+background:#25d366;
+color:white;
+padding:14px 18px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
 }
-.whatsapp{bottom:150px;background:#25d366;}
-.call{bottom:110px;background:#2563eb;}
-.tiktok{bottom:70px;background:#000;}
-.facebook{bottom:30px;background:#1877f2;}
+
+.call{
+position:fixed;
+right:15px;
+bottom:95px;
+background:#2563eb;
+color:white;
+padding:14px 18px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.tiktok{
+position:fixed;
+right:15px;
+bottom:50px;
+background:#000;
+color:white;
+padding:14px 18px;
+border-radius:40px;
+text-decoration:none;
+}
+
+.facebook{
+position:fixed;
+right:15px;
+bottom:5px;
+background:#1877f2;
+color:white;
+padding:14px 18px;
+border-radius:40px;
+text-decoration:none;
+}
+
 footer{
-  text-align:center;
-  padding:20px;
-  background:#000;
-  color:#aaa;
+text-align:center;
+padding:15px;
+background:#000;
+color:#aaa;
 }
+
 </style>
 </head>
+
 <body>
+
+<!-- TOP IMAGE -->
 
 <div class="hero"></div>
 
+<!-- INFO -->
+
 <div class="info">
+
 <h2>DE GREAT DOVE GLOBAL IMPEX</h2>
-<p>Giant in all-around electrical materials of all types. Such as chandeliers, switches, sockets, pipes, cables, street lights, conduit materials and more.</p>
-<p><strong>Address:</strong> 10 Odison Plaza Electrical Dealers, Int Market, Kilometer 5 Onitsha-Owerri Road, Obosi, Anambra State.</p>
+
+<p>Giant in allaround electrical materials of all types.</p>
+
+<p>Such as chandeliers, switches, sockets, pipe, cables, street lights and conduit materials.</p>
+
+<p><b>Address:</b> 10 Odison Plaza Electrical Dealers Int Market,<br>
+Kilometer 5 Onitsha Owerri Road, Obosi Anambra State.</p>
+
 </div>
 
-<!-- MOVING IMAGE -->
-<div class="moving-wrap">
-  <div class="moving-track">
-    <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(17).jpeg" alt="Electrical Material 1">
-  </div>
+<!-- MOVING IMAGES -->
+
+<div class="slider">
+
+<div class="slide-track">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(17).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(18).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(17).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(18).jpeg">
+
 </div>
 
-<!-- STATIC GALLERY -->
+</div>
+
+<!-- PRODUCT IMAGES -->
+
 <div class="gallery">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(18).jpeg" alt="Electrical Material 2">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(19).jpeg" alt="Electrical Material 3">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(21).jpeg" alt="Electrical Material 4">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(22).jpeg" alt="Electrical Material 5">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(23).jpeg" alt="Electrical Material 6">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(24).jpeg" alt="Electrical Material 7">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(25).jpeg" alt="Electrical Material 8">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(26).jpeg" alt="Electrical Material 9">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(27).jpeg" alt="Electrical Material 10">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(28).jpeg" alt="Electrical Material 11">
-<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(29).jpeg" alt="Electrical Material 12">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(19).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(21).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(22).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(23).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(24).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(25).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(26).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(27).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(28).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(29).jpeg">
+
 </div>
 
-<!-- CUSTOMER FORM -->
+<!-- FORM -->
+
 <div class="form-box">
-<h2>Order / Booking Form</h2>
-<form onsubmit="submitForm();return false;">
 
-<label>Customer Name</label>
-<input id="name" placeholder="Full Name">
+<h2>Order Form</h2>
 
-<label>Phone Number</label>
-<input id="phone" placeholder="Phone Number">
+<form onsubmit="sendWhatsApp();return false;">
 
-<label>Customer Address</label>
-<input id="address" placeholder="Address">
+<label>Name</label>
+<input id="name">
 
-<label>Select Product / Service</label>
+<label>Phone</label>
+<input id="phone">
+
+<label>Customer Location</label>
+<input id="location">
+
+<label>Select Product</label>
 <select id="product">
-<option>Chandeliers</option>
-<option>Wall Brackets</option>
+<option>Chandelier</option>
+<option>Wall Bracket</option>
 <option>Switches</option>
 <option>Sockets</option>
 <option>Pipes</option>
 <option>Cables</option>
-<option>Street Lights</option>
+<option>Street Light</option>
 <option>Conduit Materials</option>
-<option>Installations</option>
 </select>
 
 <label>Home Delivery</label>
 <select id="delivery">
-<option>Yes, I want delivery</option>
-<option>No delivery</option>
+<option>Yes</option>
+<option>No</option>
 </select>
 
 <label>More Specifications</label>
-<textarea id="specs" placeholder="Size, color, quantity, or any special requests"></textarea>
+<textarea id="specs"></textarea>
 
-<button>Submit via WhatsApp</button>
+<button type="submit">Submit to WhatsApp</button>
+
 </form>
+
 </div>
 
-<footer>© 2026 DE GREAT DOVE GLOBAL IMPEX</footer>
+<footer>
+© DE GREAT DOVE GLOBAL IMPEX
+</footer>
 
-<a class="whatsapp" href="#" onclick="openWhatsApp()">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/2348039716382">WhatsApp</a>
+
 <a class="call" href="tel:07047271507">Call</a>
-<a class="tiktok" href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU" target="_blank">TikTok</a>
-<a class="facebook" href="https://www.facebook.com/share/1Krjttexr8/" target="_blank">Facebook</a>
+
+<a class="tiktok" href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU">TikTok</a>
+
+<a class="facebook" href="https://www.facebook.com/share/1Krjttexr8/">Facebook</a>
 
 <script>
-function openWhatsApp(){
-  const msg = `Hello DE GREAT DOVE GLOBAL IMPEX,%0A%0AI am interested in your products and services.`;
-  window.open("https://wa.me/2348039716382?text="+msg,"_blank");
+
+function sendWhatsApp(){
+
+let msg="Customer Order:%0A";
+msg+="Name: "+document.getElementById("name").value+"%0A";
+msg+="Phone: "+document.getElementById("phone").value+"%0A";
+msg+="Location: "+document.getElementById("location").value+"%0A";
+msg+="Product: "+document.getElementById("product").value+"%0A";
+msg+="Delivery: "+document.getElementById("delivery").value+"%0A";
+msg+="Specs: "+document.getElementById("specs").value;
+
+window.open("https://wa.me/2348039716382?text="+msg);
+
 }
 
-function submitForm(){
-  const msg = `Hello DE GREAT DOVE GLOBAL IMPEX,%0A%0ACustomer Details:%0AName: ${name.value}%0APhone: ${phone.value}%0AAddress: ${address.value}%0AProduct/Service: ${product.value}%0AHome Delivery: ${delivery.value}%0AMore Specifications: ${specs.value}`;
-  window.open("https://wa.me/2348039716382?text="+msg,"_blank");
-}
 </script>
 
 </body>
