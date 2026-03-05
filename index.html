@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DE GREAT DOVE GLOBAL IMPEX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#000;
+color:#f5d76e;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:20px;
+}
+
+header h1{
+margin:10px 0;
+font-size:28px;
+}
+
+header p{
+color:white;
+font-size:15px;
+}
+
+/* BUTTONS */
+
+.buttons a{
+display:inline-block;
+margin:6px;
+padding:10px 16px;
+background:#f5d76e;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+/* IMAGE GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+padding:15px;
+}
+
+.gallery img{
+width:100%;
+border:2px solid #f5d76e;
+border-radius:6px;
+}
+
+/* FORM */
+
+.container{
+padding:20px;
+}
+
+form{
+background:#111;
+padding:20px;
+border-radius:8px;
+border:2px solid #f5d76e;
+}
+
+label{
+display:block;
+margin-top:12px;
+font-weight:bold;
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin-top:5px;
+border-radius:4px;
+border:none;
+}
+
+button{
+width:100%;
+margin-top:20px;
+padding:12px;
+background:#f5d76e;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:6px;
+}
+
+/* MAP */
+
+.map{
+margin:20px;
+border:2px solid #f5d76e;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:15px;
+color:white;
+font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+
+<h1>DE GREAT DOVE GLOBAL IMPEX</h1>
+
+<p><b>Giant in All-Round Electrical Materials</b></p>
+
+<p>
+Dealers in chandeliers, switches, sockets, pipes, cables and many more electrical materials.
+</p>
+
+<p>
+Address: 10 Odison Plaza Electrical Dealers International Market,<br>
+Kilometer 5 Onitsha-Owerri Road, Obosi, Anambra State.
+</p>
+
+<div class="buttons">
+
+<a href="tel:07047271507">CALL</a>
+
+<a href="https://wa.me/2348039716382">WHATSAPP</a>
+
+<a href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU">TIKTOK</a>
+
+<a href="https://www.facebook.com/share/1Krjttexr8/">FACEBOOK</a>
+
+</div>
+
+</header>
+
+
+<!-- ELECTRICAL MATERIALS GALLERY -->
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1581092160607-ee22731c3f3c">
+
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+
+<img src="https://images.unsplash.com/photo-1616627989730-0d28f52f4fb7">
+
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4">
+
+<img src="https://images.unsplash.com/photo-1599493758267-c6c884c7071f">
+
+<img src="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b">
+
+<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
+
+<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
+
+</div>
+
+
+
+<!-- CUSTOMER ORDER FORM -->
+
+<div class="container">
+
+<form onsubmit="sendWhatsApp(); return false;">
+
+<label>Customer Name</label>
+<input type="text" id="name">
+
+<label>Customer Phone Number</label>
+<input type="tel" id="phone">
+
+<label>Customer Address</label>
+<input type="text" id="address">
+
+<label>Select Electrical Material</label>
+
+<select id="product">
+
+<option>Chandeliers</option>
+<option>Switches</option>
+<option>Sockets</option>
+<option>Cables</option>
+<option>PVC Pipes</option>
+<option>Electrical Accessories</option>
+
+</select>
+
+<label>Home Delivery</label>
+
+<select id="delivery">
+
+<option>Yes</option>
+<option>No</option>
+
+</select>
+
+<button>Submit Order via WhatsApp</button>
+
+</form>
+
+</div>
+
+
+
+<!-- MAP -->
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Onitsha%20Owerri%20Road%20Obosi&output=embed"
+width="100%" height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+
+
+<footer>
+
+© DE GREAT DOVE GLOBAL IMPEX  
+All Types of Electrical Materials Available
+
+</footer>
+
+
+
+<script>
+
+function sendWhatsApp(){
+
+var name=document.getElementById("name").value;
+
+var phone=document.getElementById("phone").value;
+
+var address=document.getElementById("address").value;
+
+var product=document.getElementById("product").value;
+
+var delivery=document.getElementById("delivery").value;
+
+var message="Hello DE GREAT DOVE GLOBAL IMPEX,%0A%0AI want to order electrical materials.%0A%0A"+
+"Name: "+name+"%0A"+
+"Phone: "+phone+"%0A"+
+"Address: "+address+"%0A"+
+"Product: "+product+"%0A"+
+"Home Delivery: "+delivery+"%0A%0A"+
+"Please respond with price and availability.";
+
+window.open("https://wa.me/2348039716382?text="+message);
+
+}
+
+</script>
+
+
+</body>
+</html>
