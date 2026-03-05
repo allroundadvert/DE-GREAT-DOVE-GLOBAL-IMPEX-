@@ -4,69 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DE GREAT DOVE GLOBAL IMPEX</title>
-
 <style>
+:root{--gold:#d4af37;}
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#000;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:linear-gradient(180deg,#020617,#000);
   color:#f5f5f5;
 }
-
-:root{
-  --gold:#d4af37;
-}
-
 /* HERO */
 .hero{
   width:100%;
-  text-align:center;
+  height:320px;
+  background:url('https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/1772704509609.png') center/contain no-repeat;
   border-bottom:4px solid var(--gold);
 }
-.hero img{
-  width:auto;
-  max-width:100%;
-  height:auto;
-}
-
 /* INFO */
 .info{
   text-align:center;
   padding:30px 20px;
 }
-.info h1{
+.info h2{
   color:var(--gold);
-  margin-bottom:10px;
 }
-
+.info p{
+  margin-top:10px;
+}
 /* GALLERY */
 .gallery{
-  max-width:1100px;
-  margin:40px auto;
+  max-width:1200px;
+  margin:30px auto;
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:15px;
-  padding:10px;
 }
 .gallery img{
   width:100%;
-  height:230px;
+  height:180px;
   object-fit:cover;
-  border:2px solid rgba(212,175,55,.7);
-  box-shadow:0 0 10px rgba(212,175,55,.3);
+  border:2px solid var(--gold);
+  border-radius:6px;
+  box-shadow:0 0 10px rgba(212,175,55,0.4);
 }
-
 /* FORM */
 .form-box{
-  max-width:750px;
+  max-width:900px;
   margin:50px auto;
   padding:30px;
-  border:1px solid rgba(212,175,55,.6);
+  border:1px solid rgba(212,175,55,0.5);
   background:#050505;
 }
 .form-box h2{
   color:var(--gold);
   text-align:center;
+  margin-bottom:15px;
 }
 label{
   display:block;
@@ -77,31 +68,24 @@ input,select,textarea{
   width:100%;
   padding:12px;
   margin-top:6px;
-  background:#0c0c0c;
+  background:#020617;
   border:1px solid #333;
   color:#fff;
 }
 textarea{
   min-height:100px;
+  resize:vertical;
 }
 button{
   margin-top:25px;
   width:100%;
   padding:16px;
-  background:linear-gradient(90deg,#d4af37,#f1d27a);
+  background:linear-gradient(90deg,#d4af37,#ffd966);
   border:none;
   font-size:18px;
-  font-weight:bold;
+  font-weight:800;
   cursor:pointer;
 }
-
-/* MAP */
-.map iframe{
-  width:100%;
-  height:350px;
-  border:2px solid rgba(212,175,55,.4);
-}
-
 /* FLOATING BUTTONS */
 .whatsapp,.call,.tiktok,.facebook{
   position:fixed;
@@ -110,108 +94,103 @@ button{
   border-radius:40px;
   color:#fff;
   text-decoration:none;
-  font-weight:bold;
+  font-weight:700;
+  z-index:999;
 }
-.whatsapp{bottom:140px;background:#25d366}
-.call{bottom:90px;background:#2563eb}
-.tiktok{bottom:40px;background:#000;border:2px solid #fff}
-.facebook{bottom:190px;background:#1877f2}
-
+.whatsapp{bottom:150px;background:#25d366;}
+.call{bottom:110px;background:#2563eb;}
+.tiktok{bottom:70px;background:#000;}
+.facebook{bottom:30px;background:#1877f2;}
 footer{
-  background:#000;
   text-align:center;
   padding:20px;
+  background:#000;
   color:#aaa;
-  margin-top:40px;
 }
 </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/1772704509609.png" alt="DE GREAT DOVE GLOBAL IMPEX Top">
-</div>
+<div class="hero"></div>
 
 <div class="info">
-  <h1>DE GREAT DOVE GLOBAL IMPEX</h1>
-  <p>Giant in allaround electrical materials of all types.</p>
-  <p>Such as chandeliers, switches, sockets, pipe, cables, conduit materials, street lights and many more.</p>
-  <p>Adress: 10 Odison Plaza Electrical Dealers International Market, Kilometer 5 Onitsha Owerri Road, Obosi Anambra State.</p>
+<h2>DE GREAT DOVE GLOBAL IMPEX</h2>
+<p>Giant in all-around electrical materials of all types. Such as chandeliers, switches, sockets, pipes, cables, street lights, conduit materials and more.</p>
+<p><strong>Address:</strong> 10 Odison Plaza Electrical Dealers, Int Market, Kilometer 5 Onitsha-Owerri Road, Obosi, Anambra State.</p>
 </div>
 
 <!-- PRODUCT GALLERY -->
 <div class="gallery">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/chandelier.jpg" alt="Chandelier">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/wall_bracket.jpg" alt="Wall Bracket">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/switch.jpg" alt="Switch">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/socket.jpg" alt="Socket">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/cable.jpg" alt="Cable">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/pipe.jpg" alt="Pipe">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/street_light.jpg" alt="Street Light">
-  <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/3e67d8b6d9ddf1f7c0fff320da49c1319202441b/conduit.jpg" alt="Conduit Materials">
-</div>
-
-<!-- GOOGLE MAP -->
-<div class="map">
-  <iframe src="https://www.google.com/maps?q=Onitsha+Owerri+Road+Obosi+Anambra+State&output=embed"></iframe>
+<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1" alt="Chandelier">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22731c3f3c" alt="Chandelier">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" alt="Wall Bracket">
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4" alt="Wall Light">
+<img src="https://images.pexels.com/photos/395329/pexels-photo-395329.jpeg" alt="Switch">
+<img src="https://images.pexels.com/photos/430142/pexels-photo-430142.jpeg" alt="Socket">
+<img src="https://images.pexels.com/photos/110954/pexels-photo-110954.jpeg" alt="Electrical Cable">
+<img src="https://images.pexels.com/photos/194034/pexels-photo-194034.jpeg" alt="Wire">
+<img src="https://images.pexels.com/photos/35807/pexels-photo.jpg" alt="Street Light">
+<img src="https://images.pexels.com/photos/207717/pexels-photo-207717.jpeg" alt="Outdoor Lighting">
+<img src="https://images.pexels.com/photos/209753/pexels-photo-209753.jpeg" alt="Conduit Pipe">
+<img src="https://images.pexels.com/photos/461047/pexels-photo-461047.jpeg" alt="Electrical Tubing">
 </div>
 
 <!-- CUSTOMER FORM -->
 <div class="form-box">
-<h2>Customer Order Form</h2>
-<form onsubmit="sendOrder(); return false;">
+<h2>Order / Booking Form</h2>
+<form onsubmit="submitForm();return false;">
+
 <label>Customer Name</label>
-<input id="name" placeholder="Enter your name">
-<label>Customer Phone</label>
-<input id="phone" placeholder="Enter phone number">
+<input id="name" placeholder="Full Name">
+
+<label>Phone Number</label>
+<input id="phone" placeholder="Phone Number">
+
 <label>Customer Address</label>
-<input id="address" placeholder="Enter delivery address">
+<input id="address" placeholder="Address">
+
 <label>Select Product / Service</label>
 <select id="product">
-<option>Chandelier</option>
-<option>Wall Bracket</option>
+<option>Chandeliers</option>
+<option>Wall Brackets</option>
 <option>Switches</option>
 <option>Sockets</option>
+<option>Pipes</option>
 <option>Cables</option>
-<option>Street Light</option>
+<option>Street Lights</option>
 <option>Conduit Materials</option>
-<option>PVC Pipe</option>
-<option>Electrical Installation</option>
+<option>Installations</option>
 </select>
+
 <label>Home Delivery</label>
 <select id="delivery">
-<option>Yes, I need delivery</option>
+<option>Yes, I want delivery</option>
 <option>No delivery</option>
 </select>
+
 <label>More Specifications</label>
-<textarea id="specs" placeholder="Write color, size, quantity or any special request"></textarea>
-<button type="submit">Submit Order via WhatsApp</button>
+<textarea id="specs" placeholder="Size, color, quantity, or any special requests"></textarea>
+
+<button>Submit via WhatsApp</button>
 </form>
 </div>
 
-<footer>
-© 2026 DE GREAT DOVE GLOBAL IMPEX
-</footer>
+<footer>© 2026 DE GREAT DOVE GLOBAL IMPEX</footer>
 
-<!-- FLOATING BUTTONS -->
-<a class="whatsapp" href="https://wa.me/2348039716382">WhatsApp</a>
+<a class="whatsapp" href="#" onclick="openWhatsApp()">WhatsApp</a>
 <a class="call" href="tel:07047271507">Call</a>
-<a class="tiktok" href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU">TikTok</a>
-<a class="facebook" href="https://www.facebook.com/share/1Krjttexr8/">Facebook</a>
+<a class="tiktok" href="https://www.tiktok.com/@degreatdove?_r=1&_t=ZS-94OyZOgPkJU" target="_blank">TikTok</a>
+<a class="facebook" href="https://www.facebook.com/share/1Krjttexr8/" target="_blank">Facebook</a>
 
 <script>
-function sendOrder(){
-var msg =
-"NEW CUSTOMER ORDER%0A%0A"+
-"Name: "+document.getElementById("name").value+"%0A"+
-"Phone: "+document.getElementById("phone").value+"%0A"+
-"Address: "+document.getElementById("address").value+"%0A"+
-"Product: "+document.getElementById("product").value+"%0A"+
-"Delivery: "+document.getElementById("delivery").value+"%0A"+
-"Specifications: "+document.getElementById("specs").value;
-window.open("https://wa.me/2348039716382?text="+msg,"_blank");
+function openWhatsApp(){
+  const msg = `Hello DE GREAT DOVE GLOBAL IMPEX,%0A%0AI am interested in your products and services.`;
+  window.open("https://wa.me/2348039716382?text="+msg,"_blank");
+}
+
+function submitForm(){
+  const msg = `Hello DE GREAT DOVE GLOBAL IMPEX,%0A%0ACustomer Details:%0AName: ${name.value}%0APhone: ${phone.value}%0AAddress: ${address.value}%0AProduct/Service: ${product.value}%0AHome Delivery: ${delivery.value}%0AMore Specifications: ${specs.value}`;
+  window.open("https://wa.me/2348039716382?text="+msg,"_blank");
 }
 </script>
 
