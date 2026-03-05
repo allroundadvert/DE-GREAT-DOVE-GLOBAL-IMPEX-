@@ -30,12 +30,37 @@ body{
 .info p{
   margin-top:10px;
 }
-/* GALLERY */
+/* MOVING IMAGE */
+.moving-wrap{
+  overflow:hidden;
+  max-width:1200px;
+  margin:20px auto;
+  border-top:1px solid rgba(212,175,55,.4);
+  border-bottom:1px solid rgba(212,175,55,.4);
+}
+.moving-track{
+  display:flex;
+  animation:slide 12s linear infinite alternate;
+}
+.moving-track img{
+  width:33%;
+  max-width:400px;
+  height:200px;
+  object-fit:cover;
+  margin:10px;
+  border:2px solid var(--gold);
+  border-radius:6px;
+}
+@keyframes slide{
+  from{transform:translateX(0);}
+  to{transform:translateX(-30%);}
+}
+/* STATIC GALLERY */
 .gallery{
   max-width:1200px;
   margin:30px auto;
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns:repeat(2,1fr);
   gap:15px;
 }
 .gallery img{
@@ -119,20 +144,26 @@ footer{
 <p><strong>Address:</strong> 10 Odison Plaza Electrical Dealers, Int Market, Kilometer 5 Onitsha-Owerri Road, Obosi, Anambra State.</p>
 </div>
 
-<!-- PRODUCT GALLERY -->
+<!-- MOVING IMAGE -->
+<div class="moving-wrap">
+  <div class="moving-track">
+    <img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(17).jpeg" alt="Electrical Material 1">
+  </div>
+</div>
+
+<!-- STATIC GALLERY -->
 <div class="gallery">
-<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1" alt="Chandelier">
-<img src="https://images.unsplash.com/photo-1581092160607-ee22731c3f3c" alt="Chandelier">
-<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" alt="Wall Bracket">
-<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4" alt="Wall Light">
-<img src="https://images.pexels.com/photos/395329/pexels-photo-395329.jpeg" alt="Switch">
-<img src="https://images.pexels.com/photos/430142/pexels-photo-430142.jpeg" alt="Socket">
-<img src="https://images.pexels.com/photos/110954/pexels-photo-110954.jpeg" alt="Electrical Cable">
-<img src="https://images.pexels.com/photos/194034/pexels-photo-194034.jpeg" alt="Wire">
-<img src="https://images.pexels.com/photos/35807/pexels-photo.jpg" alt="Street Light">
-<img src="https://images.pexels.com/photos/207717/pexels-photo-207717.jpeg" alt="Outdoor Lighting">
-<img src="https://images.pexels.com/photos/209753/pexels-photo-209753.jpeg" alt="Conduit Pipe">
-<img src="https://images.pexels.com/photos/461047/pexels-photo-461047.jpeg" alt="Electrical Tubing">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(18).jpeg" alt="Electrical Material 2">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(19).jpeg" alt="Electrical Material 3">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(21).jpeg" alt="Electrical Material 4">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(22).jpeg" alt="Electrical Material 5">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(23).jpeg" alt="Electrical Material 6">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(24).jpeg" alt="Electrical Material 7">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(25).jpeg" alt="Electrical Material 8">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(26).jpeg" alt="Electrical Material 9">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(27).jpeg" alt="Electrical Material 10">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(28).jpeg" alt="Electrical Material 11">
+<img src="https://raw.githubusercontent.com/allroundadvert/DE-GREAT-DOVE-GLOBAL-IMPEX-/23de5576b13170552ffe32be4248d8775625ca04/images%20(29).jpeg" alt="Electrical Material 12">
 </div>
 
 <!-- CUSTOMER FORM -->
